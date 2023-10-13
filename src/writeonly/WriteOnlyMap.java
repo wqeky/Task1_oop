@@ -7,7 +7,7 @@ import java.util.TreeMap;
 
 public class WriteOnlyMap<K, V> implements MapExample<K, V> {
 
-    private Map<K, V> original;
+    public Map<K, V> original;
 
     public WriteOnlyMap(Map<K, V> map) {
         original = map;

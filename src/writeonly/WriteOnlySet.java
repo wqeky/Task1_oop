@@ -19,9 +19,8 @@ public class WriteOnlySet<T> implements SetExample<T> {
 
     @Override
     public boolean isEmpty() {
-        return original.size() != 0;
+        return original.isEmpty();
     }
-
     @Override
     public boolean contains(Object o) {
         throw new RuntimeException("You can't read elements in writeonly set");
